@@ -51,7 +51,6 @@
     "lint": "eslint src test",
     "mocha": "mocha",
     "postversion": "git push && git push --tags && npm run clean",
-    "prepublish": "npm-run-all clean lint test build",
     "preversion": "npm-run-all clean lint test",
     "test": "mocha --require babel-register",
     "travis": "npm-run-all lint mocha"
